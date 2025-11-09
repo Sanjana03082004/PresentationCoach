@@ -56,19 +56,24 @@ Copy code
 ## 🧩 Project Structure
 
 app/
-├── src/main/java/com/example/presentationcoach/
-│ ├── GeminiHelper.kt # Handles Gemini API request/response
-│ ├── MainActivity.kt # UI + video selection logic
-│ └── ui/theme/ # Jetpack Compose theme setup
-│
-├── src/main/res/
-│ ├── layout/activity_main.xml # Layout with button, progress bar, and result text
-│ ├── values/ # Colors, strings, and styles
-│ └── mipmap/ & drawable/ # Icons
+├── src/
+│ └── main/
+│ ├── java/com/example/presentationcoach/
+│ │ ├── GeminiHelper.kt # Handles Gemini API request/response
+│ │ ├── MainActivity.kt # UI + video selection logic
+│ │ └── ui/theme/ # App theme (Color, Theme, Type)
+│ │
+│ ├── res/ # Android resource files
+│ │ ├── layout/activity_main.xml # UI layout with button, progress bar, result text
+│ │ ├── values/ # Colors, strings, and styles
+│ │ ├── drawable/ # Icons and vector assets
+│ │ └── mipmap/ # App launcher icons
+│ │
+│ └── AndroidManifest.xml
 │
 ├── build.gradle.kts # App-level Gradle config
-├── settings.gradle.kts # Project name
-├── gradle.properties # Store GEMINI_API_KEY here
+├── settings.gradle.kts # Project name and Gradle setup
+├── gradle.properties # Store GEMINI_API_KEY here (local only)
 └── ...
 
 yaml
