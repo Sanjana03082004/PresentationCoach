@@ -144,8 +144,3 @@ You’re free to use, modify, and distribute it with attribution.
 “Your presentation isn’t just about what you say — it’s how you make people feel.” 💬
 
 yaml
-Copy code
-
----
-
-Would you like me to generate a **fancy GitHub-style header** (with badges like `Kotlin | Android Studio | Gemini API | OkH
